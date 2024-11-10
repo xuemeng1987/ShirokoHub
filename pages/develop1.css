@@ -18,9 +18,17 @@ body {
 }
 
 header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header-container {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
 }
 
 .bot-icon {
@@ -32,11 +40,14 @@ header {
 h1 {
     font-size: 2em;
     color: #61dafb;
+    flex-grow: 1;
 }
 
 #time-display {
     margin-left: auto;
     font-size: 1rem;
+    color: #ffffff;
+    margin-left: 20px;
 }
 
 nav {
