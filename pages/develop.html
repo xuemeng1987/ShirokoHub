@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +13,19 @@
 </head>
 <body>
     <header>
-        <img src="../images/bot-icon.png" alt="機器人圖標" class="bot-icon">
+        <img src="../images/boticon.png" alt="機器人圖標" class="bot-icon">
         <h1>零號計劃 - Discord 機器人更新進度</h1>
-    </header>
+        <div id="time-display">時間: <span id="current-time"></span></div>
+    </header>    
     <nav>
-        <ul class="nav-menu">
-            <li><a href="../index.html"></a></li>
+        <ul>
+            <li><a href="../index.html">首頁</a></li>
             <li><a href="about-me.html">關於我</a></li>
-            <li><a href="daily.html">日常</a></li>
+            <li><a href="contact.html">聯絡方式</a></li>
             <li><a href="develop.html">開發進度</a></li>
+            <li><a href="daily.html">日常</a></li>
         </ul>
-    </nav>
+    </nav>    
     <main>
         <section id="updates">
             <h2>更新進度</h2>
@@ -33,9 +35,9 @@
                 <ul>
                     <li>還在修改RPG小游戲系統中</li>
                     <li>還在構想中如何對戰玩家</li>
-                    <li>還在構想中如何繼續製作賭博系統以及獎勵機制</li>
+                    <li>還在構想中如何繼續製作賭博系統以及獎勳機制</li>
                 </ul>
-                <img src="../images/update-image.gif" alt="更新示例圖片" class="update-image">
+                <img src="../images/update-image.gif" alt="更新示例圖片" class="update-image">                
                 <div class="progress-bar">
                     <div class="progress" style="width: 0%;"></div>
                 </div>
@@ -44,8 +46,7 @@
             <div class="button-container">
                 <a href="https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot" target="_blank" class="invite-button">
                     點擊我邀請機器人加入到你的伺服器
-                    <img src="../images/bot-icon.png" alt="邀請機器人">
-                </a>
+                    <img src="../images/boticon.png" alt="邀請機器人">
                 </a>
                 <a href="https://shoplnk.me/YSGStore?_tab=0#tab-0" target="_blank" class="extra-button">
                     <img src="../images/YSGicon.png" alt="前往YSG商店" class="button-icon">點擊我前往YSG小店
@@ -53,5 +54,15 @@
             </div>
         </section>
     </main>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateTime, 1000);
+    </script>
 </body>
 </html>
