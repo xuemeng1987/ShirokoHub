@@ -68,7 +68,7 @@ main {
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    background-color: #1e90ff;
+    background-color: #ff914d;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -78,7 +78,7 @@ main {
 }
 
 .shop-button:hover {
-    background-color: #1c86e0;
+    background-color: #e5773e;
 }
 
 .button-icon {
