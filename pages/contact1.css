@@ -47,9 +47,9 @@ header h1 {
 }
 
 nav {
-    background-color: #23272a; /* Discord 左側背景色 */
+    background-color: #23272a;
     width: 200px;
-    padding-top: 150px; /* 讓菜單稍微往下 */
+    padding-top: 150px;
     height: 100vh;
     position: fixed;
     left: 0;
@@ -82,7 +82,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    background-color: #ff914d; /* 橘色按鈕 */
+    background-color: #ff914d;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -104,9 +104,9 @@ nav a:hover {
 }
 
 main {
-    margin-left: 220px; /* 左側菜單留白 */
+    margin-left: 220px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.1); /* 灰色半透明背景 */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     width: 80%;
     min-height: 100vh;
@@ -139,10 +139,10 @@ main h2 {
     padding: 8px;
     margin-right: 8px;
     text-align: center;
-    width: 32px; /* 圓形背景寬度 */
-    height: 32px; /* 圓形背景高度 */
+    width: 32px;
+    height: 32px;
 }
 
 .social-link:hover .social-icon {
-    background-color: #ddd; /* 懸停效果 */
+    background-color: #ddd;
 }
