@@ -17,10 +17,10 @@
 - [零號計劃的網頁](https://xuemeng1987.github.io/ShirokoHub/) 最後開始製作網頁
 - [邀請零號計劃的機器人(幽幽子)](https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot) 三年的期待 換來了你的涅槃重生
 
-## 機器人的源代以及網頁源代碼碼抄襲警告和告知
+## 機器人的源代碼以及網頁源代碼抄襲警告和告知
 
 - 任何未经授权的代码抄袭盗用 或使用此开源代码的行为都将面临法律行动
-  - 如果發現經行違法進行爲或非法用途 也將面臨法律行動 依照版權法 
+  - 如果發現違法行爲或非法用途 也將面臨法律行動 依照版權法 
   - [第42條](https://www.myipo.gov.my/ms/copyright-act-1987/)
   - [第36條](http://www.commonlii.org/my/legis/consol_act/ca1987133/s36.html)
 
@@ -36,7 +36,7 @@
 # Hello
 
 - I’m Shiroko, or you can call me Miya.
-- I’m a Discord bot developer, the creator of YouYouzi (Project Zero), and just an ordinary person.
+- I’m a Discord bot developer, the creator of YuYuko (Project Zero), and just an ordinary person.
 - I enjoy games and anime.
 - I play games often, look pretty average, and occasionally act a bit quirky.
 
@@ -48,7 +48,7 @@ It might not be as aesthetically pleasing as others, but I do my best!
 
 - [Project Zero](https://github.com/xuemeng1987/Project-Zero): Where the dream begins
 - [Project Zero Website](https://xuemeng1987.github.io/ShirokoHub/): Where the website journey began
-- [Invite the Project Zero Bot (YouYouzi)](https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot): Three years of work reborn
+- [Invite the Project Zero Bot (YuYuko)](https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot): Three years of work reborn
 
 ## Bot Source Code & Website Source Code Copy Warning
 
