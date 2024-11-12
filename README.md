@@ -33,35 +33,38 @@
 - Instagram: [Miya_253_](https://www.instagram.com/miya_2530_/)
 - X: [@yuemeng62](https://x.com/yuemeng200)
 
-# Hello
+# Good Morning, Good Afternoon, Good Evening, Hello
 
-- I’m Shiroko, or you can call me Miya.
-- I’m a Discord bot developer, the creator of YuYuko (Project Zero), and just an ordinary person.
-- I enjoy games and anime.
-- I play games often, look pretty average, and occasionally act a bit quirky.
+- I am Shiroko, but you can also call me Miya.
+- I am a Discord bot developer, the creator of a bot called 幽幽子 (Yūyūko), and also just an ordinary human.
+- I enjoy gaming and anime.
+- I play games often, look quite average, and occasionally go a bit crazy.
 
 ## The Bot
 
-My bot mainly serves smaller groups or just aims to be fun.
+The bot mainly serves small groups or simply exists for fun.
 
-It might not be as aesthetically pleasing as others, but I do my best!
+Maybe the bots I create aren't as aesthetically pleasing as others, or maybe they are.
 
-- [Project Zero](https://github.com/xuemeng1987/Project-Zero): Where the dream begins
-- [Project Zero Website](https://xuemeng1987.github.io/ShirokoHub/): Where the website journey began
-- [Invite the Project Zero Bot (YuYuko)](https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot): Three years of work reborn
+But that's okay.
 
-## Bot Source Code & Website Source Code Copy Warning
+- [Project Zero](https://github.com/xuemeng1987/Project-Zero) - Where the dream began.
+- [Project Zero Webpage](https://xuemeng1987.github.io/ShirokoHub/) - The webpage where I finally started creating.
+- [Invite Yūyūko (Project Zero) Bot](https://discord.com/oauth2/authorize?client_id=852046004550238258&permissions=15&scope=bot) - Three years of anticipation, leading to your rebirth.
 
-- Any unauthorized code copying or use of this open-source code will result in legal action.
-  - Actions found to be illegal or in violation will face legal consequences under copyright law.
+## Source Code & Webpage Source Code Plagiarism Warning & Notice
+
+- Any unauthorized use, plagiarism, or theft of this open-source code will result in legal action.
+  - If any illegal activities or unauthorized use are detected, legal actions will be taken in accordance with copyright law.
   - [Section 42](https://www.myipo.gov.my/ms/copyright-act-1987/)
   - [Section 36](http://www.commonlii.org/my/legis/consol_act/ca1987133/s36.html)
 
-It’s not that I want to be harsh, but if you copy it someday, I’m ready for cross-border legal action.
+It's not what I want, but if one day my code is stolen, congratulations, I’ll file an international lawsuit.
 
-## Where to Find Me
+## How to Find Me
 
 - Discord: miya253
-- GitHub: [Miya253](https://github.com/xuemeng1987)
+- Github: [Miya253](https://github.com/xuemeng1987)
 - Instagram: [Miya_253_](https://www.instagram.com/miya_2530_/)
 - X: [@yuemeng62](https://x.com/yuemeng200)
+
