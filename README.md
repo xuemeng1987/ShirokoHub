@@ -66,5 +66,4 @@ It's not what I want, but if one day my code is stolen, congratulations, I’ll 
 - Discord: miya253
 - Github: [Miya253](https://github.com/xuemeng1987)
 - Instagram: [Miya_253_](https://www.instagram.com/miya_2530_/)
-- X: [@yuemeng62](https://x.com/yuemeng200)
 
