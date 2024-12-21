@@ -9,7 +9,7 @@ body {
     background-image: url("../images/about-bot-background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    color: #ccc;
+    color: black;
 }
 
 .container {
@@ -38,7 +38,7 @@ header {
 .title {
     font-size: 24px;
     font-weight: bold;
-    color: #f0f0f0;
+    color: black;
 }
 
 .time {
@@ -100,7 +100,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: rgba(201, 67, 18, 0.74);
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
@@ -120,10 +120,9 @@ header {
     margin-right: 8px;
 }
 
-
 main {
     grid-area: main;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     padding: 20px;
     overflow-y: auto;
 }
