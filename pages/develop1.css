@@ -100,7 +100,7 @@ main {
 
 .progress {
     height: 10px;
-    width: 0%;
+    width: 100%;
     background-color: #61dafb;
     animation: rgbRunning 2s infinite linear;
 }
