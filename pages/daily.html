@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShirokoHub - 日常</title>
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="manifest" href="../images/site.webmanifest" />
+    <link rel="stylesheet" href="daily1.css">
+</head>
+<body>
+    <header>
+        <img src="../images/usericon.png" alt="我的個人頭像" class="user-icon">
+        <h1>日常瑣事分享基地</h1>
+        <div id="time-display">時間: <span id="current-time"></span></div>
+    </header> 
+    <nav>
+        <ul>
+            <li><a href="../index.html">首頁</a></li>
+            <li><a href="about-bot.html">關於機器人</a></li>
+            <li><a href="contact.html">聯絡方式</a></li>
+            <li><a href="develop.html">開發進度</a></li>
+            <li><a href="daily.html">日常</a></li>
+            <li>
+                <button class="shop-button" onclick="window.location.href='https://shoplnk.me/YSGStore?_tab=0#tab-0'">
+                    <img src="../images/YSGicon.png" alt="YSG小商店" class="button-icon">
+                    點擊前往 YSG 小商店
+                </button>
+            </li>
+        </ul>
+    </nav>    
+    <main>
+        <h2>一個開發者的日常 沒什麽特別的</h2>
+        <p class="text-content">
+            分享一些生活日常 可能會以一定時間更新 但不確定
+        </p>
+        <section class="card-slider">
+            <div class="slider-wrapper">
+                <a href="page/12-16-2024.html" class="card">
+                    <h3>12-16-2024</h3>
+                    <p>discord機器人停止更新和服務</p>
+                </a>
+
+            </div>
+
+            <button class="prev-btn">‹</button>
+            <button class="next-btn">›</button>
+            
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                document.getElementById('current-time').textContent = `${hours}:${minutes}:${seconds}`;
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.querySelector('.slider-wrapper');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+    
+            if (slider && prevBtn && nextBtn) {
+                let currentIndex = 0;
+    
+                function getCardWidth() {
+                    const cardStyle = window.getComputedStyle(slider.children[0]);
+                    const cardWidth = slider.children[0].offsetWidth;
+                    const cardMarginRight = parseInt(cardStyle.marginRight);
+                    return cardWidth + cardMarginRight;
+                }
+    
+                function updateSlider() {
+                    const cardWidth = getCardWidth();
+                    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                }
+    
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                    updateSlider();
+                });
+    
+                nextBtn.addEventListener('click', () => {
+                    const maxIndex = slider.children.length - 1;
+                    currentIndex = Math.min(currentIndex + 1, maxIndex);
+                    updateSlider();
+                });
+            } else {
+                console.warn("滑動組件未找到，請檢查 HTML 結構。");
+            }
+        });
+    </script>
+
+</body>
+</html>
