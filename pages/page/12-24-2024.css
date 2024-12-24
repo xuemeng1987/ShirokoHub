@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/daily-background.jpg');
+    background-image: url('../../images/page-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #ffffff;
+    color: #111;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,6 @@ header #time-display {
     font-size: 0.9em;
     margin-left: auto;
     padding-left: 10px;
-    min-width: unset;
     max-width: 150px;
     text-align: right;
     overflow: hidden;
@@ -96,29 +95,6 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
-.shop-button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    margin: 10px 15px;
-}
-
-.shop-button:hover {
-    background-color: #e64a19;
-}
-
-.button-icon {
-    width: 20px;
-    height: 20px;
-}
-
 main {
     padding: 100px 20px 20px;
     max-width: 900px;
@@ -133,67 +109,22 @@ main h2 {
     text-align: left;
 }
 
-main .text-content {
+main p {
     font-size: 1.2em;
     margin-bottom: 20px;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
 }
 
-.card-slider {
-    position: relative;
-    overflow: auto;
-    margin: 20px 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-height: 500px;
-}
 
-.slider-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-}
-
-.card {
-    min-width: 100%;
-    min-height: 150px;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
+section h2 {
+    font-size: 1.8rem;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
-.card:hover {
-    background-color: #e0f7fa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    margin: 12px 0;
-    font-size: 1.4em;
-    color: #333;
-}
-
-.card h4 {
-    margin: 10px 0;
-    font-size: 1.4em;
-    color: #333;
-}
-
-.card h5 {
-    margin: 8px 0;
-    font-size: 1.4em;
-    color: #333;
-}
-
-.prev-btn, .next-btn {
-    display: none;
+section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
 }

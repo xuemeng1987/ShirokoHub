@@ -38,24 +38,20 @@
             分享一些生活日常 可能會以一定時間更新 但不確定
         </p>
         <section class="card-slider">
-            
             <div class="slider-wrapper">
-                
                 <a href="page/12-16-2024.html" class="card">
                     <h3>12-16-2024</h3>
                     <p>discord機器人停止更新和服務</p>
                 </a>
-
                 <a href="page/12-23-2024.html" class="card">
                     <h4>12-23-2024</h4>
                     <p>關於一些進度和一些特別的東西的進展</p>
                 </a>
-
+                <a href="page/12-24-2024.html" class="card">
+                    <h5>12-24-2024</h5>
+                    <p>漫長的工作終於結束了 思考一下能不能在網頁顯示機器人在綫和不在綫</p>
+                </a>
             </div>
-
-            <button class="prev-btn">‹</button>
-            <button class="next-btn">›</button>
-            
         </section>
     </main>
     <script>
@@ -73,37 +69,35 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const slider = document.querySelector('.slider-wrapper');
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
-    
-            if (slider && prevBtn && nextBtn) {
-                let currentIndex = 0;
-    
-                function getCardWidth() {
-                    const cardStyle = window.getComputedStyle(slider.children[0]);
-                    const cardWidth = slider.children[0].offsetWidth;
-                    const cardMarginRight = parseInt(cardStyle.marginRight);
-                    return cardWidth + cardMarginRight;
-                }
-    
-                function updateSlider() {
-                    const cardWidth = getCardWidth();
-                    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-                }
-    
-                prevBtn.addEventListener('click', () => {
-                    currentIndex = Math.max(currentIndex - 1, 0);
-                    updateSlider();
-                });
-    
-                nextBtn.addEventListener('click', () => {
-                    const maxIndex = slider.children.length - 1;
-                    currentIndex = Math.min(currentIndex + 1, maxIndex);
-                    updateSlider();
-                });
-            } else {
-                console.warn("滑動組件未找到，請檢查 HTML 結構。");
+            const container = document.querySelector('.card-slider');
+            let currentIndex = 0;
+        
+            function getCardHeight() {
+                const cardStyle = window.getComputedStyle(slider.children[0]);
+                const cardHeight = slider.children[0]?.offsetHeight || 0;
+                const cardMarginBottom = parseInt(cardStyle.marginBottom) || 0;
+                return cardHeight + cardMarginBottom;
             }
+        
+            function updateSlider() {
+                const cardHeight = getCardHeight();
+                slider.style.transform = `translateY(-${currentIndex * cardHeight}px)`;
+            }
+        
+            container.addEventListener('wheel', (event) => {
+                event.preventDefault();
+                const delta = Math.sign(event.deltaY);
+                const maxIndex = Math.max(slider.children.length - Math.ceil(container.clientHeight / getCardHeight()), 0);
+                if (delta > 0) {
+                    currentIndex = Math.min(currentIndex + 1, maxIndex);
+                } else {
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateSlider();
+            });
+        
+            // 初始更新
+            updateSlider();
         });
     </script>
 
